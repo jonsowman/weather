@@ -1,6 +1,3 @@
-' modified for git testing
-' and again
-
 #picaxe28x1
 sertxd("Restarted",CR,LF)
 read 0,b27
