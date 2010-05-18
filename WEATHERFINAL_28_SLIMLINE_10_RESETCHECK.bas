@@ -1,3 +1,7 @@
+' sgsweather code
+' using multiple servers
+' order: kryten, sheeva, pippin
+
 #picaxe28x1
 sertxd("Restarted",CR,LF)
 read 0,b27
