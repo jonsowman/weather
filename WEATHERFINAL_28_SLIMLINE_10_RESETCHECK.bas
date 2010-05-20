@@ -572,34 +572,7 @@ wait 20
 ptr = 0
 hsersetup b2400_4, %01
 
-serout 1,t2400,("C109.74.204.206/80",CR)
-
-'109.74.204.206
-'serout 1,t2400,("C1",CR)
-wait 5
-
-serout 1,t2400,("GET /weather/add.php?bc=1&pwd=weathercat2&l=",#b2,"&h=",#b0,"&b=",#w9,"&p=",#w10,"&ws=",#b3,"&wd=",#b27,"&t=",#w2,"&m=",#b1,"&r=",#w3,"&t2=",#w4,"&l2=",#w11,"&g=",#b26,"&b10=",#b10,"&w8=",#w8,"&b22=",#b22,"&b23=",#b23,"&b24=",#b24,"&b25=",#b25,"&b26=",#b26," HTTP/1.1",13,10,"HOST: kryten.hexoc.com",13,10,"USER-AGENT: XPORT",13,10,13,10)
-
-pause 5
-serout 1,t2400,($04)
-         sertxd("GET /weather/add.php?bc=1&pwd=weathercat2&l=",#b2,"&h=",#b0,"&b=",#w9,"&p=",#w10,"&ws=",#b3,"&wd=",#b27,"&t=",#w2,"&m=",#b1,"&r=",#w3,"&t2=",#w4,"&l2=",#w11,"&g=",#b26,"&b10=",#b10,"&w8=",#w8,"&b22=",#b22,"&b23=",#b23,"&b24=",#b24,"&b25=",#b25,"&b26=",#b26," HTTP/1.1",13,10,"HOST: kryten.hexoc.com",13,10,"USER-AGENT: XPORT",CR,LF)
-sertxd("FINISH",CR,LF,CR,LF)
-
-
-wait 5
-
-serout 1,t2400,("C93.97.184.163/80",CR)
-
-wait 5
-
-serout 1,t2400,("GET /weather/add.php?bc=1&pwd=weathercat2&l=",#b2,"&h=",#b0,"&b=",#w9,"&p=",#w10,"&ws=",#b3,"&wd=",#b27,"&t=",#w2,"&m=",#b1,"&r=",#w3,"&t2=",#w4,"&l2=",#w11,"&g=",#b26,"&b10=",#b10,"&w8=",#w8,"&b22=",#b22,"&b23=",#b23,"&b24=",#b24,"&b25=",#b25,"&b26=",#b26," HTTP/1.1",13,10,"HOST: sheeva.hexoc.com",13,10,"USER-AGENT: XPORT",13,10,13,10)
-
-pause 5
-serout 1,t2400,($04)
-
-wait 1
-
-serout 1,t2400,("C62.18.44.156/80",CR)
+serout 1,t2400,("C",CR)
 
 wait 5
 
@@ -607,6 +580,9 @@ serout 1,t2400,("GET /weather/add.php?bc=1&pwd=weathercat2&l=",#b2,"&h=",#b0,"&b
 
 pause 5
 serout 1,t2400,($04)
+         sertxd("GET /weather/add.php?bc=1&pwd=weathercat2&l=",#b2,"&h=",#b0,"&b=",#w9,"&p=",#w10,"&ws=",#b3,"&wd=",#b27,"&t=",#w2,"&m=",#b1,"&r=",#w3,"&t2=",#w4,"&l2=",#w11,"&g=",#b26,"&b10=",#b10,"&w8=",#w8,"&b22=",#b22,"&b23=",#b23,"&b24=",#b24,"&b25=",#b25,"&b26=",#b26," HTTP/1.1",13,10,"HOST: www.hexoc.com",13,10,"USER-AGENT: XPORT",CR,LF)
+sertxd("FINISH",CR,LF,CR,LF)
+
 
 wait 5
 
