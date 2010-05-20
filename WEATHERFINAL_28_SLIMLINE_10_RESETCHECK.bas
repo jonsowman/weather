@@ -1,6 +1,11 @@
 ' sgsweather code
 ' using multiple servers
-' order: kryten, sheeva, pippin
+' set hostlist as follows
+' -----------
+' 1) kryten: 109.74.204.206
+' 2) sheeva: 93.97.184.163
+' 3) pippin: 62.18.44.156
+' -----------
 
 #picaxe28x1
 sertxd("Restarted",CR,LF)
